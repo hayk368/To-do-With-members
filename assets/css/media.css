@@ -1,0 +1,172 @@
+
+@media (max-width: 1024px) {
+  .lol {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+  .nav a {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .task-item-card {
+    padding: 14px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    overflow-x: hidden;
+  }
+
+  .n-2,
+  .n-3 {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 12px;
+  }
+
+  .nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 6px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav a {
+    padding: 6px 10px;
+    font-size: 12.5px;
+    border-radius: 10px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  input[placeholder="serch task"] {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+
+  #taskFilters {
+    flex-direction: column;
+    gap: 10px !important;
+    margin-bottom: 14px !important;
+  }
+
+  #taskFilters select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .lol {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .task-col,
+  .todo,
+  .tomo {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .task-item-card {
+    padding: 14px;
+    border-radius: 14px;
+  }
+
+  .card-top {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .card-title {
+    font-size: 15px;
+    word-break: break-word;
+  }
+
+  .card-desc {
+    font-size: 13px;
+    word-break: break-word;
+  }
+
+  .card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .card-actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+
+  .edit-btn,
+  .delete-btn,
+  .edit-member-btn {
+    padding: 7px 12px;
+    font-size: 12.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .n-2,
+  .n-3 {
+    padding: 8px 10px;
+  }
+
+  .nav {
+    gap: 5px;
+  }
+
+  .nav a {
+    padding: 6px 8px;
+    font-size: 11.5px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .col-header h3 {
+    font-size: 15px;
+  }
+
+  .cat-badge,
+  .day-badge {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .member-pill {
+    font-size: 12px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
